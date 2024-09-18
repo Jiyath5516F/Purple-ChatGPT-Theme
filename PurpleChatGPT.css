@@ -1,0 +1,317 @@
+/*==============================================================================
+  ||                                                                            ||
+  ||                        🌟 Project: Purple ChatGPT 🌟                       ||
+  ||                        💻 Author: Jiyath5516F                              ||
+  ||                        📅 Created: September 18, 2024                      ||
+  ||                        🔖 Version: 1.0                                     ||
+  ||                        📝 Description: A Purple theme for Chat GPT.        ||
+  ||                                                                            ||
+  =============================================================================*/
+
+
+  
+/*───────────────────────────────────────────────
+|               Root Styles                      |
+───────────────────────────────────────────────*/
+:root {
+  --color-text: #d5bbff;
+  --color-text-s: #f7edffff;
+  --color-bg: #40384C;
+  --color-code-bg: #231c2f86;
+  --color-nav: #231C2F;
+  --color-chat-bar: #2A2235;
+  --color-scrollbar: #635b70ff;
+  --color-scrollbar-hover: #978ca4ff;
+  --main-surface-secondary: #40384C;
+  --color-nav-danger: #51001a;
+  --main-surface-secondary-c: #40384C !important;
+}
+
+/*───────────────────────────────────────────────
+|               Main Styles                      |
+───────────────────────────────────────────────*/
+button[data-testid="send-button"] svg {
+  color: var(--color-bg) !important;
+}
+
+button[data-testid="send-button"]:hover svg {
+  color: var(--color-bg) !important;
+}
+
+[dir=ltr] .bg-gradient-to-l {
+  background-image: linear-gradient(to left, var(--color-bg));
+}
+
+.bg-token-main-surface-tertiary {
+  background-color: var(--color-bg);
+}
+
+p.placeholder {
+  color: var(--color-text) !important;
+}
+
+.bg-token-main-surface-secondary {
+  background-color: var(--main-surface-secondary-c);
+}
+
+.text-token-text-secondary {
+  color: var(--color-text);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: #231C2F;
+  }
+}
+
+.btn-primary:is(.dark *) {
+  background-color: #231C2F;
+  color: #fff;
+}
+
+.dark\:prose-invert:is(.dark *) :where(code):not(:where([class~=not-prose] *)) {
+  background-color: var(--color-code-bg);
+}
+
+.dark\:bg-gray-700:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: #45385d;
+  border: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--color-chat-bar);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-secondary:hover {
+    background-color: var(--color-nav);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-danger-outline:hover {
+    background-color: var(--color-nav-danger);
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:radix-state-active\:bg-token-main-surface-secondary[data-state=active] {
+    background-color: var(--color-bg);
+  }
+}
+
+button.btn.relative.btn-primary.mt-4.self-start {
+  background: #231C2F;
+}
+
+svg.icon-2xl {
+  color: var(--color-bg);
+}
+
+svg {
+  color: var(--color-bg);
+}
+
+.sticky.top-\[calc\(1\.75em-1px\)\].z-\[1\].h-3.bg-gradient-to-b.from-token-main-surface-primary.from-50\%.to-transparent.md\:static {
+  background: var(--color-bg);
+}
+
+.dark\:bg-white:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: var(--color-bg);
+}
+
+* {
+  color: var(--color-text-s);
+  scrollbar-color: var(--color-scrollbar) transparent;
+}
+
+*:hover {
+  scrollbar-color: var(--color-scrollbar-hover) transparent;
+}
+
+.dark :hover {
+  scrollbar-color: var(--color-scrollbar-hover) transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .dark\:hover\:bg-token-main-surface-secondary:hover:is(.dark *) {
+    background-color: #40384C;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+}
+
+
+body {
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.bg-token-main-surface-primary {
+  background: var(--color-nav);
+}
+
+.dark\:bg-token-main-surface-secondary:is(.dark *) {
+  background-color: var(--color-chat-bar);
+}
+
+nav.flex.h-full.w-full.flex-col.px-3 {
+  background-color: #231C2F;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hover\:bg-token-sidebar-surface-secondary:hover {
+    background-color: var(--color-bg);
+  }
+}
+
+.bg-token-sidebar-surface-primary {
+  background-color: #231C2F;
+}
+
+.from-token-sidebar-surface-primary {
+  --tw-gradient-from: #231C2F;
+}
+
+.ltr\:bg-gradient-to-l:where([dir=ltr], [dir=ltr] *) {
+  background-image: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .enabled\:hover\:bg-token-main-surface-secondary:hover:enabled {
+    background-color: #231C2F;
+  }
+}
+
+.bg-token-sidebar-surface-secondary {
+  background-color: #40384C;
+}
+
+
+
+
+.flex.items-center.text-token-text-secondary.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md.h-9 {
+  background: #231C2F;
+}
+
+.flex.items-center.rounded.bg-token-main-surface-secondary.px-2.font-sans.text-xs.text-token-text-secondary {
+  background: #40384C;
+}
+
+/*───────────────────────────────────────────────
+|               Highlight.JS Styles              |
+───────────────────────────────────────────────*/
+
+[dir=ltr] code.hljs,
+[dir=ltr] code[class*=language-],
+[dir=ltr] pre[class*=language-] {
+  background: #1f182a;
+}
+
+.overflow-y-auto.p-4 {
+  background: #1f182a;
+}
+
+
+.hljs-keyword {
+  color: #ab82ff;
+  font-weight: bold;
+}
+
+.hljs-string {
+  color: #c4a7e7;
+}
+
+.hljs-function .hljs-title,
+.hljs-title {
+  color: #ae81ff;
+  font-weight: bold;
+}
+
+.hljs-params {
+  color: #f8f8f2;
+}
+
+.hljs-number {
+  color: #d291e4;
+}
+
+.hljs-comment {
+  color: #6c6783;
+  font-style: italic;
+}
+
+.hljs-variable {
+  color: #ff92df;
+}
+
+.hljs-class .hljs-title {
+  color: #b2a1ff;
+  font-weight: bold;
+}
+
+.hljs-built_in {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.hljs-attr,
+.hljs-attribute {
+  color: #e7c7ff;
+}
+
+.hljs-operator {
+  color: #ff79c6;
+}
+
+.hljs-type {
+  color: #a9a1ff;
+}
+
+.hljs-punctuation {
+  color: #f8f8f2;
+}
+
+.hljs-tag {
+  color: #ff6ac1;
+  font-weight: bold;
+}
+
+.hljs-attribute {
+  color: #c792ea;
+}
+
+.hljs-value {
+  color: #ff92df;
+}
+
+.hljs-literal {
+  color: #f78c6c;
+}
+
+.hljs-error {
+  color: #ff5370;
+  font-weight: bold;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+/*───────────────────────────────────────────────
+|                    THE END                     |
+───────────────────────────────────────────────*/
